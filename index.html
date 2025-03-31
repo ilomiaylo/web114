@@ -1,1 +1,40 @@
+<!-- Ilayda 0rhan | March 30 10pm-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 3 Practice</title>
+</head>
+<body>
+    <h1>Chapter 3 Practice</h1>
+    <p>Questions and Answers</p>
+    <!--I wasn't sure if I should put the questions in here so I put them in the body.-->
+    <p>Q: What is the purpose of the "if" statement?</p>
+    <p>Q: Name a situation where you would need to create an "if" statement.</p>
+  <p>A: When checking if a user is logged in before showing private content.</p>
+
+  <p>Q: When comparing values, in what data type is the result stored?</p>
+  <p>A: Boolean</p>
+
+  <script>
+    // 1. Ask for user's name
+    let username = prompt("What is your name?");
+
+    // 2. Ask for permission to use the name
+    let proceed = confirm("Can I use your name on this web page?");
+
+    // 3. Use if-else to respond based on permission
+    if (proceed) {
+      console.log("Yes, I can use your name on this page.");
+      console.log("Username: " + username);
+    } else {
+      console.log("No, you can not use my name on this web page. Privacy Please.");
+    }
+
+    // 4. Ask for age
+    let age = prompt("What is your age?");
+
+    // 5. Show message with name and age
+    alert("Hi " + username + "! You are " + age + " years old.");
+  </script>
 
