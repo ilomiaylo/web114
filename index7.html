@@ -1,0 +1,60 @@
+<!--
+Name: [Ilayda Orhan]
+Date: April 6, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Switch Statement Exercise</title>
+</head>
+<body>
+  <h1>JavaScript Switch Statement Exercise</h1>
+
+  <!-- Question and Answer -->
+  <section>
+    <h2>Question:</h2>
+    <p><strong>When would you use a switch statement in your projects?</strong></p>
+    <h2>Answer:</h2>
+    <p>
+      A switch statement is useful when you need to perform different actions based on the value of a single variable or expression. 
+      It is more readable and organized than writing multiple if-else statements, especially when dealing with multiple fixed options like days of the week, menu selections, or status codes.
+    </p>
+  </section>
+
+  <!-- JavaScript Exercise -->
+  <script>
+    // JavaScript Exercise - Favorite Day Switch Statement
+    const favDay = prompt("What is your favorite day of the week? (e.g., Monday, Tuesday)");
+
+    switch (favDay.toLowerCase()) {
+      case "monday":
+        console.log("Monday is a fresh start to the week!");
+        break;
+      case "tuesday":
+        console.log("Tuesday is a great day to be productive.");
+        break;
+      case "wednesday":
+        console.log("Wednesday means you're halfway there!");
+        break;
+      case "thursday":
+        console.log("Thursday is perfect for planning ahead.");
+        break;
+      case "friday":
+        console.log("Friday is a fun day to wrap up the week.");
+        break;
+      case "saturday":
+        console.log("Saturday is awesome for relaxing!");
+        break;
+      case "sunday":
+        console.log("Sunday is ideal for rest and family time.");
+        break;
+      default:
+        console.log("That's an interesting choice! Every day has its own charm.");
+        break;
+    }
+  </script>
+
+</body>
+</html>
