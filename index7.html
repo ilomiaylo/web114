@@ -1,0 +1,50 @@
+<!-- 
+  Name: İlayda Orhan
+  Date: 04/22/2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web-114 Functions Project</title>
+</head>
+<body>
+    <h1>JavaScript Gas Average Project</h1>
+    <p>Open the browser console to see the script in action.</p>
+
+    <script>
+        // Asking the user's name
+        let username = prompt("Enter your name:");
+
+        // Create the calcGasAvg function
+        function calcGasAvg() {
+            let count = 0;
+            let total = 0;
+            let weeklyGas;
+
+            // Asking for the first weekly gas total
+            weeklyGas = parseFloat(prompt("Enter your weekly gas total. Enter -1 when you are done."));
+
+            while (weeklyGas !== -1) {
+                if (!isNaN(weeklyGas)) {
+                    total += weeklyGas;
+                    count++;
+                }
+                weeklyGas = parseFloat(prompt("Enter your weekly gas total. Enter -1 when you are done."));
+            }
+
+            // Avoiding dividing by 0
+            if (count === 0) return 0;
+
+            return total / count;
+        }
+
+        // Calling the function and store in variable 'gas'
+        let gas = calcGasAvg();
+
+        // Showing result using confirm
+        confirm(username + "'s average weekly gas bill is $" + gas.toFixed(2));
+    </script>
+</body>
+</html>
